@@ -3,6 +3,7 @@
 		<meta charset="utf-8"></meta>
 		<title>Сайт web-студії "Web-DECO</title>
 		<!--=========java script=========-->
+		<script src="js/clock1.js"></script>
 		<script type="text/javascript">
 		function send(){
 			var valid = true;
@@ -22,10 +23,12 @@
 				return false;
 			}
 
+		}		
+		</script>
+		<script>
+		window.onload = function(){
+			setInterval(clockPainting, 1000);
 		}
-		
-		
-		
 		</script>
 		<!--==== css styles =====-->
 		<style>
@@ -60,6 +63,8 @@
 			</tr>
 			<tr>
 				<td width="30%" valign="top">
+					<center><canvas id="canvas" height="120" width="120"></canvas></center>
+					<hr>
 					<font size="5" color="navy">
 						<h2>Новини</h2>
 						<font size="5">
